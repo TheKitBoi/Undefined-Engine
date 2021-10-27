@@ -8,7 +8,7 @@ Raf - a Coder??
 
 VoidlessArzon - he artist
 
-BadTie - he can't code???? moral support
+BadTie - cant code but is a very good bf <3 -- AxyAnim8
 
 Naruhodo A. Wrighto - Shitty coder (he knows js not hx lmao)
 
