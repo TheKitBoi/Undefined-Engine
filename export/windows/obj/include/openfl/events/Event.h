@@ -101,10 +101,10 @@ class HXCPP_CLASS_ATTRIBUTES Event_obj : public ::hx::Object
 		void preventDefault();
 		::Dynamic preventDefault_dyn();
 
-		void stopImmediatePropagation();
+		virtual void stopImmediatePropagation();
 		::Dynamic stopImmediatePropagation_dyn();
 
-		void stopPropagation();
+		virtual void stopPropagation();
 		::Dynamic stopPropagation_dyn();
 
 		virtual ::String toString();

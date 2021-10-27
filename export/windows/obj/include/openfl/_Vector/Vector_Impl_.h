@@ -12,6 +12,7 @@ HX_DECLARE_CLASS2(openfl,_Vector,IVector)
 HX_DECLARE_CLASS2(openfl,_Vector,IntVector)
 HX_DECLARE_CLASS2(openfl,_Vector,ObjectVector)
 HX_DECLARE_CLASS2(openfl,_Vector,Vector_Impl_)
+HX_DECLARE_CLASS2(openfl,geom,Vector3D)
 
 namespace openfl{
 namespace _Vector{
@@ -58,6 +59,18 @@ class HXCPP_CLASS_ATTRIBUTES Vector_Impl__obj : public ::hx::Object
 
 		static void __boot();
 		static  ::Dynamic __meta__;
+		static  ::openfl::_Vector::ObjectVector ofArray_String(::Array< ::String > array);
+		static ::Dynamic ofArray_String_dyn();
+
+		static  ::openfl::_Vector::ObjectVector ofArray_openfl_geom_Vector3D(::Array< ::Dynamic> array);
+		static ::Dynamic ofArray_openfl_geom_Vector3D_dyn();
+
+		static  ::openfl::_Vector::IntVector ofArray_Int(::Array< int > array);
+		static ::Dynamic ofArray_Int_dyn();
+
+		static  ::openfl::_Vector::FloatVector ofArray_Float(::Array< Float > array);
+		static ::Dynamic ofArray_Float_dyn();
+
 		static  ::openfl::_Vector::ObjectVector concat(::Dynamic this1, ::openfl::_Vector::ObjectVector vec);
 		static ::Dynamic concat_dyn();
 

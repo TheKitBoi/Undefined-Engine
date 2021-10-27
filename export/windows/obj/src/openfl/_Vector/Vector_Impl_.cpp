@@ -21,7 +21,14 @@
 #ifndef INCLUDED_openfl__Vector_Vector_Impl_
 #include <openfl/_Vector/Vector_Impl_.h>
 #endif
+#ifndef INCLUDED_openfl_geom_Vector3D
+#include <openfl/geom/Vector3D.h>
+#endif
 
+HX_LOCAL_STACK_FRAME(_hx_pos_a3c09d73ddb47bfc_520_ofArray_String,"openfl._Vector.Vector_Impl_","ofArray_String",0xc2e4944f,"openfl._Vector.Vector_Impl_.ofArray_String","openfl/Vector.hx",520,0x4a01873c)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3c09d73ddb47bfc_520_ofArray_openfl_geom_Vector3D,"openfl._Vector.Vector_Impl_","ofArray_openfl_geom_Vector3D",0xf9422126,"openfl._Vector.Vector_Impl_.ofArray_openfl_geom_Vector3D","openfl/Vector.hx",520,0x4a01873c)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3c09d73ddb47bfc_520_ofArray_Int,"openfl._Vector.Vector_Impl_","ofArray_Int",0x83fca6b1,"openfl._Vector.Vector_Impl_.ofArray_Int","openfl/Vector.hx",520,0x4a01873c)
+HX_LOCAL_STACK_FRAME(_hx_pos_a3c09d73ddb47bfc_520_ofArray_Float,"openfl._Vector.Vector_Impl_","ofArray_Float",0x3deed3de,"openfl._Vector.Vector_Impl_.ofArray_Float","openfl/Vector.hx",520,0x4a01873c)
 HX_LOCAL_STACK_FRAME(_hx_pos_a3c09d73ddb47bfc_193_concat,"openfl._Vector.Vector_Impl_","concat",0x0c502a95,"openfl._Vector.Vector_Impl_.concat","openfl/Vector.hx",193,0x4a01873c)
 HX_LOCAL_STACK_FRAME(_hx_pos_a3c09d73ddb47bfc_202_copy,"openfl._Vector.Vector_Impl_","copy",0x7571caf6,"openfl._Vector.Vector_Impl_.copy","openfl/Vector.hx",202,0x4a01873c)
 HX_LOCAL_STACK_FRAME(_hx_pos_a3c09d73ddb47bfc_214_filter,"openfl._Vector.Vector_Impl_","filter",0xc9b54139,"openfl._Vector.Vector_Impl_.filter","openfl/Vector.hx",214,0x4a01873c)
@@ -78,6 +85,90 @@ Dynamic Vector_Impl__obj::__Create(::hx::DynamicArray inArgs)
 bool Vector_Impl__obj::_hx_isInstanceOf(int inClassId) {
 	return inClassId==(int)0x00000001 || inClassId==(int)0x7fea3445;
 }
+
+ ::openfl::_Vector::ObjectVector Vector_Impl__obj::ofArray_String(::Array< ::String > array){
+            	HX_GC_STACKFRAME(&_hx_pos_a3c09d73ddb47bfc_520_ofArray_String)
+HXLINE( 521)		int length = null();
+HXDLIN( 521)		bool fixed = null();
+HXDLIN( 521)		::Array< ::String > array1 = null();
+HXDLIN( 521)		 ::openfl::_Vector::ObjectVector vector =  ::openfl::_Vector::ObjectVector_obj::__alloc( HX_CTX ,length,fixed,array1,true);
+HXLINE( 523)		{
+HXLINE( 523)			int _g = 0;
+HXDLIN( 523)			int _g1 = array->length;
+HXDLIN( 523)			while((_g < _g1)){
+HXLINE( 523)				_g = (_g + 1);
+HXDLIN( 523)				int i = (_g - 1);
+HXLINE( 525)				vector->set(i,array->__get(i));
+            			}
+            		}
+HXLINE( 528)		return vector;
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC1(Vector_Impl__obj,ofArray_String,return )
+
+ ::openfl::_Vector::ObjectVector Vector_Impl__obj::ofArray_openfl_geom_Vector3D(::Array< ::Dynamic> array){
+            	HX_GC_STACKFRAME(&_hx_pos_a3c09d73ddb47bfc_520_ofArray_openfl_geom_Vector3D)
+HXLINE( 521)		int length = null();
+HXDLIN( 521)		bool fixed = null();
+HXDLIN( 521)		::Array< ::Dynamic> array1 = null();
+HXDLIN( 521)		 ::openfl::_Vector::ObjectVector vector =  ::openfl::_Vector::ObjectVector_obj::__alloc( HX_CTX ,length,fixed,array1,true);
+HXLINE( 523)		{
+HXLINE( 523)			int _g = 0;
+HXDLIN( 523)			int _g1 = array->length;
+HXDLIN( 523)			while((_g < _g1)){
+HXLINE( 523)				_g = (_g + 1);
+HXDLIN( 523)				int i = (_g - 1);
+HXLINE( 525)				vector->set(i,array->__get(i).StaticCast<  ::openfl::geom::Vector3D >()).StaticCast<  ::openfl::geom::Vector3D >();
+            			}
+            		}
+HXLINE( 528)		return vector;
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC1(Vector_Impl__obj,ofArray_openfl_geom_Vector3D,return )
+
+ ::openfl::_Vector::IntVector Vector_Impl__obj::ofArray_Int(::Array< int > array){
+            	HX_GC_STACKFRAME(&_hx_pos_a3c09d73ddb47bfc_520_ofArray_Int)
+HXLINE( 521)		int length = null();
+HXDLIN( 521)		bool fixed = null();
+HXDLIN( 521)		::Array< int > array1 = null();
+HXDLIN( 521)		 ::openfl::_Vector::IntVector vector =  ::openfl::_Vector::IntVector_obj::__alloc( HX_CTX ,length,fixed,array1);
+HXLINE( 523)		{
+HXLINE( 523)			int _g = 0;
+HXDLIN( 523)			int _g1 = array->length;
+HXDLIN( 523)			while((_g < _g1)){
+HXLINE( 523)				_g = (_g + 1);
+HXDLIN( 523)				int i = (_g - 1);
+HXLINE( 525)				vector->set(i,array->__get(i));
+            			}
+            		}
+HXLINE( 528)		return vector;
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC1(Vector_Impl__obj,ofArray_Int,return )
+
+ ::openfl::_Vector::FloatVector Vector_Impl__obj::ofArray_Float(::Array< Float > array){
+            	HX_GC_STACKFRAME(&_hx_pos_a3c09d73ddb47bfc_520_ofArray_Float)
+HXLINE( 521)		int length = null();
+HXDLIN( 521)		bool fixed = null();
+HXDLIN( 521)		::Array< Float > array1 = null();
+HXDLIN( 521)		 ::openfl::_Vector::FloatVector vector =  ::openfl::_Vector::FloatVector_obj::__alloc( HX_CTX ,length,fixed,array1,true);
+HXLINE( 523)		{
+HXLINE( 523)			int _g = 0;
+HXDLIN( 523)			int _g1 = array->length;
+HXDLIN( 523)			while((_g < _g1)){
+HXLINE( 523)				_g = (_g + 1);
+HXDLIN( 523)				int i = (_g - 1);
+HXLINE( 525)				vector->set(i,array->__get(i));
+            			}
+            		}
+HXLINE( 528)		return vector;
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC1(Vector_Impl__obj,ofArray_Float,return )
 
  ::openfl::_Vector::ObjectVector Vector_Impl__obj::concat(::Dynamic this1, ::openfl::_Vector::ObjectVector vec){
             	HX_STACKFRAME(&_hx_pos_a3c09d73ddb47bfc_193_concat)
@@ -426,6 +517,7 @@ bool Vector_Impl__obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::
 		if (HX_FIELD_EQ(inName,"set_length") ) { outValue = set_length_dyn(); return true; }
 		break;
 	case 11:
+		if (HX_FIELD_EQ(inName,"ofArray_Int") ) { outValue = ofArray_Int_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"lastIndexOf") ) { outValue = lastIndexOf_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"toIntVector") ) { outValue = toIntVector_dyn(); return true; }
 		break;
@@ -434,10 +526,12 @@ bool Vector_Impl__obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::
 		if (HX_FIELD_EQ(inName,"toNullVector") ) { outValue = toNullVector_dyn(); return true; }
 		break;
 	case 13:
+		if (HX_FIELD_EQ(inName,"ofArray_Float") ) { outValue = ofArray_Float_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"toFloatVector") ) { outValue = toFloatVector_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"fromIntVector") ) { outValue = fromIntVector_dyn(); return true; }
 		break;
 	case 14:
+		if (HX_FIELD_EQ(inName,"ofArray_String") ) { outValue = ofArray_String_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"toObjectVector") ) { outValue = toObjectVector_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"fromBoolVector") ) { outValue = fromBoolVector_dyn(); return true; }
 		break;
@@ -450,6 +544,9 @@ bool Vector_Impl__obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::
 		break;
 	case 18:
 		if (HX_FIELD_EQ(inName,"fromFunctionVector") ) { outValue = fromFunctionVector_dyn(); return true; }
+		break;
+	case 28:
+		if (HX_FIELD_EQ(inName,"ofArray_openfl_geom_Vector3D") ) { outValue = ofArray_openfl_geom_Vector3D_dyn(); return true; }
 	}
 	return false;
 }
@@ -462,6 +559,10 @@ static ::hx::StaticInfo *Vector_Impl__obj_sStaticStorageInfo = 0;
 ::hx::Class Vector_Impl__obj::__mClass;
 
 static ::String Vector_Impl__obj_sStaticFields[] = {
+	HX_("ofArray_String",ce,89,35,94),
+	HX_("ofArray_openfl_geom_Vector3D",e5,16,4a,2f),
+	HX_("ofArray_Int",d2,db,8a,bd),
+	HX_("ofArray_Float",3f,53,4d,9f),
 	HX_("concat",14,09,d0,c7),
 	HX_("copy",b5,bb,c4,41),
 	HX_("filter",b8,1f,35,85),
