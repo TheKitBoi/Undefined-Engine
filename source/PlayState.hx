@@ -1,5 +1,6 @@
 package;
 
+import flixel.FlxG;
 import flixel.FlxState;
 
 class PlayState extends FlxState
@@ -7,6 +8,8 @@ class PlayState extends FlxState
 	override public function create()
 	{
 		super.create();
+		// temp
+		FlxG.switchState(new MainMenuState());
 	}
 
 	override public function update(elapsed:Float)

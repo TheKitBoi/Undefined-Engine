@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="funnyTriangle.png">
+	<!-- Created with Adobe Animate version 21.0.9.42677 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="credits port0000" x="5" y="5" width="413" height="287"/>
+	<SubTexture name="freeplay portrait0000" x="423" y="5" width="413" height="287"/>
+	<SubTexture name="options port0000" x="5" y="297" width="413" height="287"/>
+	<SubTexture name="story mode portrait0000" x="423" y="297" width="413" height="287"/>
+</TextureAtlas>
