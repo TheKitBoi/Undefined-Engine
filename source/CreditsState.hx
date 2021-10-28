@@ -38,6 +38,7 @@ class CreditsState extends FlxTransitionableState
 			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, credits[i], true, false);
 			songText.isMenuItem = true;
 			songText.scrollFactor.set();
+			songText.ID = i;
 			songText.targetY = i;
 			text.add(songText);
 		}
