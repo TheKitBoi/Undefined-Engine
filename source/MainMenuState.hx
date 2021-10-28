@@ -3,11 +3,12 @@ package;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.addons.transition.FlxTransitionableState;
 import flixel.group.FlxGroup;
 import flixel.system.FlxSound;
 import flixel.util.FlxColor;
 
-class MainMenuState extends FlxState
+class MainMenuState extends FlxTransitionableState
 {
 	var curSelected:Int;
 	var menuShit = ['storymode', 'freeplay', 'credits', 'options'];
@@ -18,6 +19,9 @@ class MainMenuState extends FlxState
 	override public function create()
 	{
 		super.create();
+		transIn = FlxTransitionableState.defaultTransIn;
+		transOut = FlxTransitionableState.defaultTransOut;
+		transitionIn();
 		menuItems = new FlxTypedGroup(100);
 		bg.loadGraphic(Paths.image('menuBG'));
 		bg.screenCenter();
@@ -59,6 +63,7 @@ class MainMenuState extends FlxState
 			menuItems.add(menuItem);
 		}
 		add(menuItems);
+		scrollMenu(0);
 	}
 
 	override public function update(elapsed:Float)
@@ -97,6 +102,7 @@ class MainMenuState extends FlxState
 
 				case 2:
 					trace('credits'); // credits
+					FlxG.switchState(new CreditsState());
 
 				case 3:
 					trace('options'); // options
