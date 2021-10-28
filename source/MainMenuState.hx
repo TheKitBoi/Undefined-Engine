@@ -1,23 +1,24 @@
 package;
 
-import away3d.materials.methods.SubsurfaceScatteringDiffuseMethod;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.group.FlxGroup;
+import flixel.system.FlxSound;
 import flixel.util.FlxColor;
 
 class MainMenuState extends FlxState
 {
-	var menuID = 1.00;
+	var curSelected:Int;
 	var menuShit = ['storymode', 'freeplay', 'credits', 'options'];
 	var bg = new FlxSprite(0, 0);
 	var funnyTriangle = new FlxSprite(0, 0);
-	var menuItems = new FlxGroup(100);
+	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	override public function create()
 	{
 		super.create();
+		menuItems = new FlxTypedGroup(100);
 		bg.loadGraphic(Paths.image('menuBG'));
 		bg.screenCenter();
 		bg.antialiasing = true;
@@ -26,29 +27,34 @@ class MainMenuState extends FlxState
 		var tex = Paths.getSparrowAtlas('funnyTriangle');
 		funnyTriangle.frames = tex;
 		funnyTriangle.antialiasing = true;
-		funnyTriangle.animation.addByPrefix('1', 'story mode portrait', 24, true);
-		funnyTriangle.animation.addByPrefix('2', 'freeplay portrait', 24, true);
-		funnyTriangle.animation.addByPrefix('3', 'credits port', 24, true);
-		funnyTriangle.animation.addByPrefix('4', 'options port', 24, true);
-		funnyTriangle.x = funnyTriangle.width * 1.2;
-		funnyTriangle.y = FlxG.height - funnyTriangle.height * 1.6;
+		funnyTriangle.animation.addByPrefix('0', 'story mode portrait', 24, true);
+		funnyTriangle.animation.addByPrefix('1', 'freeplay portrait', 24, true);
+		funnyTriangle.animation.addByPrefix('2', 'credits port', 24, true);
+		funnyTriangle.animation.addByPrefix('3', 'options port', 24, true);
+		funnyTriangle.setGraphicSize(Std.int(funnyTriangle.width * 1.284), 0);
+		funnyTriangle.updateHitbox();
+		funnyTriangle.x = 300;
+		funnyTriangle.y = FlxG.height - funnyTriangle.height - 107;
 		// ? funnyTriangle.setGraphicSize(Std.int(funnyTriangle.width * 1.5));
 		add(funnyTriangle);
-		funnyTriangle.animation.play(Std.string(menuID));
+		funnyTriangle.animation.play(Std.string(curSelected));
 
 		for (i in 0...menuShit.length)
 		{
 			// haha funny menu
-			var menuItem = new FlxSprite(550, FlxG.width / 6);
+			var menuItem = new FlxSprite(325, FlxG.width / 6);
 			var tex = Paths.getSparrowAtlas('funkyMenu');
 			menuItem.antialiasing = true;
 			menuItem.frames = tex;
 			menuItem.animation.addByPrefix('idle', menuShit[i], 24);
 			menuItem.animation.play('idle');
-			menuItem.y += i * 100;
-			menuItem.x += i * 120;
-			// stop doing this shit >>> get stuff done with other parts of the engine dumbass
+			menuItem.setGraphicSize(0, 100);
+			trace(Std.string(menuItem.height * 1.4));
 			menuItem.updateHitbox();
+			menuItem.y += i * 100;
+			menuItem.x += i * 146;
+			trace(menuItem.x);
+			// stop doing this shit >>> get stuff done with other parts of the engine dumbass
 			menuItem.ID = i;
 			menuItems.add(menuItem);
 		}
@@ -58,29 +64,53 @@ class MainMenuState extends FlxState
 	override public function update(elapsed:Float)
 	{
 		super.update(elapsed);
-		if (FlxG.keys.justReleased.UP)
+
+		menuItems.forEach(function(spr:FlxSprite)
 		{
-			scrollMenu(1);
-		}
-		else if (FlxG.keys.justReleased.DOWN)
+			if (spr.ID == curSelected)
+			{
+				spr.alpha = 1;
+			}
+			else
+			{
+				spr.alpha = 0.4;
+			}
+		});
+		// input shit
+		if (FlxG.keys.justPressed.UP)
 		{
 			scrollMenu(-1);
 		}
+		if (FlxG.keys.justPressed.DOWN)
+		{
+			scrollMenu(1);
+		}
+		if (FlxG.keys.justPressed.ENTER)
+		{
+			switch curSelected
+			{
+				case 0:
+					trace('story mode'); // story mode
+
+				case 1:
+					trace('freeplay'); // freeplay
+
+				case 2:
+					trace('credits'); // credits
+
+				case 3:
+					trace('options'); // options
+			}
+		}
 	}
 
-	function scrollMenu(delta:Float)
+	function scrollMenu(huh:Int = 0)
 	{
-		// im stupid
-		// ok so this is offtopic but this song is such a bop https://open.spotify.com/track/1by5Wbf3h3ikCd3GR8Wg3v?si=9881f088f5fc442a
-		FlxG.sound.play(Paths.sound('scrollMenu'));
-		funnyTriangle.animation.play(Std.string(menuID));
-		if (menuID > 0 && menuID < menuItems.length)
-		{
-			menuID += delta;
-		}
-		else
-		{
-			menuID = 1;
-		}
+		curSelected += huh;
+		if (curSelected >= menuItems.length)
+			curSelected = 0;
+		if (curSelected < 0)
+			curSelected = menuItems.length - 1;
+		funnyTriangle.animation.play(Std.string(curSelected));
 	}
 }

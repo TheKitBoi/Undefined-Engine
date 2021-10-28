@@ -50,7 +50,7 @@ class HXCPP_CLASS_ATTRIBUTES MainMenuState_obj : public  ::flixel::FlxState_obj
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("MainMenuState",59,88,5e,20); }
 
-		Float menuID;
+		int curSelected;
 		::Array< ::String > menuShit;
 		 ::flixel::FlxSprite bg;
 		 ::flixel::FlxSprite funnyTriangle;
@@ -59,7 +59,7 @@ class HXCPP_CLASS_ATTRIBUTES MainMenuState_obj : public  ::flixel::FlxState_obj
 
 		void update(Float elapsed);
 
-		void scrollMenu(Float delta);
+		void scrollMenu(::hx::Null< int >  huh);
 		::Dynamic scrollMenu_dyn();
 
 };

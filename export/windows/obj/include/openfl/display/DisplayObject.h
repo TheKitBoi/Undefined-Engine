@@ -278,10 +278,10 @@ class HXCPP_CLASS_ATTRIBUTES DisplayObject_obj : public  ::openfl::events::Event
 		 ::openfl::geom::Matrix set_cacheAsBitmapMatrix( ::openfl::geom::Matrix value);
 		::Dynamic set_cacheAsBitmapMatrix_dyn();
 
-		virtual ::Array< ::Dynamic> get_filters();
+		::Array< ::Dynamic> get_filters();
 		::Dynamic get_filters_dyn();
 
-		virtual ::Array< ::Dynamic> set_filters(::Array< ::Dynamic> value);
+		::Array< ::Dynamic> set_filters(::Array< ::Dynamic> value);
 		::Dynamic set_filters_dyn();
 
 		virtual Float get_height();
@@ -359,7 +359,7 @@ class HXCPP_CLASS_ATTRIBUTES DisplayObject_obj : public  ::openfl::events::Event
 		bool get_visible();
 		::Dynamic get_visible_dyn();
 
-		virtual bool set_visible(bool value);
+		bool set_visible(bool value);
 		::Dynamic set_visible_dyn();
 
 		virtual Float get_width();

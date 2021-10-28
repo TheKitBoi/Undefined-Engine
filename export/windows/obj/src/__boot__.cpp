@@ -294,6 +294,9 @@
 #ifndef INCLUDED_openfl_geom__Orientation3D_Orientation3D_Impl_
 #include <openfl/geom/_Orientation3D/Orientation3D_Impl_.h>
 #endif
+#ifndef INCLUDED_openfl_geom_Matrix3D
+#include <openfl/geom/Matrix3D.h>
+#endif
 #ifndef INCLUDED_openfl_events_UncaughtErrorEvent
 #include <openfl/events/UncaughtErrorEvent.h>
 #endif
@@ -347,6 +350,12 @@
 #endif
 #ifndef INCLUDED_openfl_events_ActivityEvent
 #include <openfl/events/ActivityEvent.h>
+#endif
+#ifndef INCLUDED_openfl_events_Event
+#include <openfl/events/Event.h>
+#endif
+#ifndef INCLUDED_openfl_errors_Error
+#include <openfl/errors/Error.h>
 #endif
 #ifndef INCLUDED_openfl_display3D_textures_Texture
 #include <openfl/display3D/textures/Texture.h>
@@ -834,6 +843,9 @@
 #ifndef INCLUDED_flixel_util_FlxBitmapDataPool
 #include <flixel/util/FlxBitmapDataPool.h>
 #endif
+#ifndef INCLUDED_openfl_geom_Rectangle
+#include <openfl/geom/Rectangle.h>
+#endif
 #ifndef INCLUDED_flixel_tweens_FlxTween
 #include <flixel/tweens/FlxTween.h>
 #endif
@@ -1065,132 +1077,6 @@
 #ifndef INCLUDED_flixel_FlxCamera
 #include <flixel/FlxCamera.h>
 #endif
-#ifndef INCLUDED_flixel_math_FlxRect
-#include <flixel/math/FlxRect.h>
-#endif
-#ifndef INCLUDED_flixel_math_FlxPoint
-#include <flixel/math/FlxPoint.h>
-#endif
-#ifndef INCLUDED_away3d_tools_utils_TextureUtils
-#include <away3d/tools/utils/TextureUtils.h>
-#endif
-#ifndef INCLUDED_away3d_tools_utils_GeomUtil
-#include <away3d/tools/utils/GeomUtil.h>
-#endif
-#ifndef INCLUDED_away3d_textures_BitmapTexture
-#include <away3d/textures/BitmapTexture.h>
-#endif
-#ifndef INCLUDED_away3d_textures__Anisotropy_Anisotropy_Impl_
-#include <away3d/textures/_Anisotropy/Anisotropy_Impl_.h>
-#endif
-#ifndef INCLUDED_away3d_primitives_LineSegment
-#include <away3d/primitives/LineSegment.h>
-#endif
-#ifndef INCLUDED_away3d_materials_utils_MipmapGenerator
-#include <away3d/materials/utils/MipmapGenerator.h>
-#endif
-#ifndef INCLUDED_away3d_materials_passes_SegmentPass
-#include <away3d/materials/passes/SegmentPass.h>
-#endif
-#ifndef INCLUDED_away3d_materials_passes_MaterialPassBase
-#include <away3d/materials/passes/MaterialPassBase.h>
-#endif
-#ifndef INCLUDED_away3d_materials_compilation_ShaderRegisterElement
-#include <away3d/materials/compilation/ShaderRegisterElement.h>
-#endif
-#ifndef INCLUDED_away3d_materials_compilation_RegisterPool
-#include <away3d/materials/compilation/RegisterPool.h>
-#endif
-#ifndef INCLUDED_away3d_materials_MaterialBase
-#include <away3d/materials/MaterialBase.h>
-#endif
-#ifndef INCLUDED_away3d_materials_LightSources
-#include <away3d/materials/LightSources.h>
-#endif
-#ifndef INCLUDED_away3d_library_assets_Asset3DType
-#include <away3d/library/assets/Asset3DType.h>
-#endif
-#ifndef INCLUDED_away3d_events_TouchEvent3D
-#include <away3d/events/TouchEvent3D.h>
-#endif
-#ifndef INCLUDED_away3d_events_Stage3DEvent
-#include <away3d/events/Stage3DEvent.h>
-#endif
-#ifndef INCLUDED_away3d_events_ShadingMethodEvent
-#include <away3d/events/ShadingMethodEvent.h>
-#endif
-#ifndef INCLUDED_away3d_events_Scene3DEvent
-#include <away3d/events/Scene3DEvent.h>
-#endif
-#ifndef INCLUDED_away3d_events_Object3DEvent
-#include <away3d/events/Object3DEvent.h>
-#endif
-#ifndef INCLUDED_away3d_events_LightEvent
-#include <away3d/events/LightEvent.h>
-#endif
-#ifndef INCLUDED_away3d_events_LensEvent
-#include <away3d/events/LensEvent.h>
-#endif
-#ifndef INCLUDED_away3d_events_GeometryEvent
-#include <away3d/events/GeometryEvent.h>
-#endif
-#ifndef INCLUDED_away3d_events_CameraEvent
-#include <away3d/events/CameraEvent.h>
-#endif
-#ifndef INCLUDED_away3d_events_Asset3DEvent
-#include <away3d/events/Asset3DEvent.h>
-#endif
-#ifndef INCLUDED_away3d_events_AnimatorEvent
-#include <away3d/events/AnimatorEvent.h>
-#endif
-#ifndef INCLUDED_openfl_errors_Error
-#include <openfl/errors/Error.h>
-#endif
-#ifndef INCLUDED_away3d_entities_SegmentSet
-#include <away3d/entities/SegmentSet.h>
-#endif
-#ifndef INCLUDED_away3d_debug_Debug
-#include <away3d/debug/Debug.h>
-#endif
-#ifndef INCLUDED_away3d_core_traverse_PartitionTraverser
-#include <away3d/core/traverse/PartitionTraverser.h>
-#endif
-#ifndef INCLUDED_away3d_core_render_DefaultRenderer
-#include <away3d/core/render/DefaultRenderer.h>
-#endif
-#ifndef INCLUDED_away3d_core_pick_PickingType
-#include <away3d/core/pick/PickingType.h>
-#endif
-#ifndef INCLUDED_away3d_core_pick_ShaderPicker
-#include <away3d/core/pick/ShaderPicker.h>
-#endif
-#ifndef INCLUDED_openfl_geom_Rectangle
-#include <openfl/geom/Rectangle.h>
-#endif
-#ifndef INCLUDED_away3d_core_pick_RaycastPicker
-#include <away3d/core/pick/RaycastPicker.h>
-#endif
-#ifndef INCLUDED_away3d_core_math_PlaneClassification
-#include <away3d/core/math/PlaneClassification.h>
-#endif
-#ifndef INCLUDED_away3d_core_math_Plane3D
-#include <away3d/core/math/Plane3D.h>
-#endif
-#ifndef INCLUDED_away3d_core_math_Matrix3DUtils
-#include <away3d/core/math/Matrix3DUtils.h>
-#endif
-#ifndef INCLUDED_openfl_geom_Matrix3D
-#include <openfl/geom/Matrix3D.h>
-#endif
-#ifndef INCLUDED_away3d_core_math_MathConsts
-#include <away3d/core/math/MathConsts.h>
-#endif
-#ifndef INCLUDED_away3d_core_managers_Touch3DManager
-#include <away3d/core/managers/Touch3DManager.h>
-#endif
-#ifndef INCLUDED_away3d_core_managers_Stage3DProxy
-#include <away3d/core/managers/Stage3DProxy.h>
-#endif
 #ifndef INCLUDED_openfl_geom_ColorTransform
 #include <openfl/geom/ColorTransform.h>
 #endif
@@ -1200,29 +1086,11 @@
 #ifndef INCLUDED_lime_math_Matrix3
 #include <lime/math/Matrix3.h>
 #endif
-#ifndef INCLUDED_away3d_core_managers_Stage3DManager
-#include <away3d/core/managers/Stage3DManager.h>
+#ifndef INCLUDED_flixel_math_FlxRect
+#include <flixel/math/FlxRect.h>
 #endif
-#ifndef INCLUDED_away3d_core_managers_Mouse3DManager
-#include <away3d/core/managers/Mouse3DManager.h>
-#endif
-#ifndef INCLUDED_away3d_events_MouseEvent3D
-#include <away3d/events/MouseEvent3D.h>
-#endif
-#ifndef INCLUDED_openfl_events_Event
-#include <openfl/events/Event.h>
-#endif
-#ifndef INCLUDED_away3d_core_managers_AGALProgram3DCache
-#include <away3d/core/managers/AGALProgram3DCache.h>
-#endif
-#ifndef INCLUDED_away3d_cameras_lenses_CoordinateSystem
-#include <away3d/cameras/lenses/CoordinateSystem.h>
-#endif
-#ifndef INCLUDED_away3d_library_assets_NamedAssetBase
-#include <away3d/library/assets/NamedAssetBase.h>
-#endif
-#ifndef INCLUDED_away3d_Away3D
-#include <away3d/Away3D.h>
+#ifndef INCLUDED_flixel_math_FlxPoint
+#include <flixel/math/FlxPoint.h>
 #endif
 #ifndef INCLUDED_Xml
 #include <Xml.h>
@@ -1449,6 +1317,9 @@
 #ifndef INCLUDED_openfl_media_ID3Info
 #include <openfl/media/ID3Info.h>
 #endif
+#ifndef INCLUDED_openfl_geom_Vector3D
+#include <openfl/geom/Vector3D.h>
+#endif
 #ifndef INCLUDED_openfl_geom_Transform
 #include <openfl/geom/Transform.h>
 #endif
@@ -1619,6 +1490,9 @@
 #endif
 #ifndef INCLUDED_openfl_display_SimpleButton
 #include <openfl/display/SimpleButton.h>
+#endif
+#ifndef INCLUDED_openfl_display_Shape
+#include <openfl/display/Shape.h>
 #endif
 #ifndef INCLUDED_openfl_display__ShaderData_ShaderData_Impl_
 #include <openfl/display/_ShaderData/ShaderData_Impl_.h>
@@ -3024,354 +2898,6 @@
 #ifndef INCLUDED_cpp_Lib
 #include <cpp/Lib.h>
 #endif
-#ifndef INCLUDED_away3d_textures_RenderTexture
-#include <away3d/textures/RenderTexture.h>
-#endif
-#ifndef INCLUDED_away3d_textures_RenderCubeTexture
-#include <away3d/textures/RenderCubeTexture.h>
-#endif
-#ifndef INCLUDED_away3d_textures_CubeTextureBase
-#include <away3d/textures/CubeTextureBase.h>
-#endif
-#ifndef INCLUDED_away3d_textures_Texture2DBase
-#include <away3d/textures/Texture2DBase.h>
-#endif
-#ifndef INCLUDED_away3d_textures_TextureProxyBase
-#include <away3d/textures/TextureProxyBase.h>
-#endif
-#ifndef INCLUDED_away3d_primitives_WireframeSphere
-#include <away3d/primitives/WireframeSphere.h>
-#endif
-#ifndef INCLUDED_away3d_primitives_WireframeCube
-#include <away3d/primitives/WireframeCube.h>
-#endif
-#ifndef INCLUDED_away3d_primitives_WireframePrimitiveBase
-#include <away3d/primitives/WireframePrimitiveBase.h>
-#endif
-#ifndef INCLUDED_away3d_primitives_data_Segment
-#include <away3d/primitives/data/Segment.h>
-#endif
-#ifndef INCLUDED_away3d_materials_utils_DefaultMaterialManager
-#include <away3d/materials/utils/DefaultMaterialManager.h>
-#endif
-#ifndef INCLUDED_away3d_materials_passes_SuperShaderPass
-#include <away3d/materials/passes/SuperShaderPass.h>
-#endif
-#ifndef INCLUDED_away3d_materials_passes_SingleObjectDepthPass
-#include <away3d/materials/passes/SingleObjectDepthPass.h>
-#endif
-#ifndef INCLUDED_away3d_materials_passes_DistanceMapPass
-#include <away3d/materials/passes/DistanceMapPass.h>
-#endif
-#ifndef INCLUDED_away3d_materials_passes_DepthMapPass
-#include <away3d/materials/passes/DepthMapPass.h>
-#endif
-#ifndef INCLUDED_away3d_materials_passes_CompiledPass
-#include <away3d/materials/passes/CompiledPass.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_SubsurfaceScatteringDiffuseMethod
-#include <away3d/materials/methods/SubsurfaceScatteringDiffuseMethod.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_ShadowMapMethodBase
-#include <away3d/materials/methods/ShadowMapMethodBase.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_ShaderMethodSetup
-#include <away3d/materials/methods/ShaderMethodSetup.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_MethodVOSet
-#include <away3d/materials/methods/MethodVOSet.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_MethodVO
-#include <away3d/materials/methods/MethodVO.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_CompositeDiffuseMethod
-#include <away3d/materials/methods/CompositeDiffuseMethod.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_ColorTransformMethod
-#include <away3d/materials/methods/ColorTransformMethod.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_EffectMethodBase
-#include <away3d/materials/methods/EffectMethodBase.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_BasicSpecularMethod
-#include <away3d/materials/methods/BasicSpecularMethod.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_BasicNormalMethod
-#include <away3d/materials/methods/BasicNormalMethod.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_BasicDiffuseMethod
-#include <away3d/materials/methods/BasicDiffuseMethod.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_LightingMethodBase
-#include <away3d/materials/methods/LightingMethodBase.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_BasicAmbientMethod
-#include <away3d/materials/methods/BasicAmbientMethod.h>
-#endif
-#ifndef INCLUDED_away3d_materials_methods_ShadingMethodBase
-#include <away3d/materials/methods/ShadingMethodBase.h>
-#endif
-#ifndef INCLUDED_away3d_materials_lightpickers_LightPickerBase
-#include <away3d/materials/lightpickers/LightPickerBase.h>
-#endif
-#ifndef INCLUDED_away3d_materials_compilation_SuperShaderCompiler
-#include <away3d/materials/compilation/SuperShaderCompiler.h>
-#endif
-#ifndef INCLUDED_away3d_materials_compilation_ShaderRegisterData
-#include <away3d/materials/compilation/ShaderRegisterData.h>
-#endif
-#ifndef INCLUDED_away3d_materials_compilation_ShaderCompiler
-#include <away3d/materials/compilation/ShaderCompiler.h>
-#endif
-#ifndef INCLUDED_away3d_materials_compilation_MethodDependencyCounter
-#include <away3d/materials/compilation/MethodDependencyCounter.h>
-#endif
-#ifndef INCLUDED_away3d_materials_TextureMaterial
-#include <away3d/materials/TextureMaterial.h>
-#endif
-#ifndef INCLUDED_away3d_materials_SinglePassMaterialBase
-#include <away3d/materials/SinglePassMaterialBase.h>
-#endif
-#ifndef INCLUDED_away3d_materials_SegmentMaterial
-#include <away3d/materials/SegmentMaterial.h>
-#endif
-#ifndef INCLUDED_away3d_lights_shadowmaps_DirectionalShadowMapper
-#include <away3d/lights/shadowmaps/DirectionalShadowMapper.h>
-#endif
-#ifndef INCLUDED_away3d_lights_shadowmaps_CubeMapShadowMapper
-#include <away3d/lights/shadowmaps/CubeMapShadowMapper.h>
-#endif
-#ifndef INCLUDED_away3d_lights_shadowmaps_ShadowMapperBase
-#include <away3d/lights/shadowmaps/ShadowMapperBase.h>
-#endif
-#ifndef INCLUDED_away3d_lights_PointLight
-#include <away3d/lights/PointLight.h>
-#endif
-#ifndef INCLUDED_away3d_lights_LightProbe
-#include <away3d/lights/LightProbe.h>
-#endif
-#ifndef INCLUDED_away3d_lights_DirectionalLight
-#include <away3d/lights/DirectionalLight.h>
-#endif
-#ifndef INCLUDED_away3d_lights_LightBase
-#include <away3d/lights/LightBase.h>
-#endif
-#ifndef INCLUDED_away3d_filters_tasks_Filter3DTaskBase
-#include <away3d/filters/tasks/Filter3DTaskBase.h>
-#endif
-#ifndef INCLUDED_away3d_filters_Filter3DBase
-#include <away3d/filters/Filter3DBase.h>
-#endif
-#ifndef INCLUDED_away3d_errors_AbstractMethodError
-#include <away3d/errors/AbstractMethodError.h>
-#endif
-#ifndef INCLUDED_away3d_entities_SubSet
-#include <away3d/entities/SubSet.h>
-#endif
-#ifndef INCLUDED_away3d_entities_SegRef
-#include <away3d/entities/SegRef.h>
-#endif
-#ifndef INCLUDED_away3d_entities_Mesh
-#include <away3d/entities/Mesh.h>
-#endif
-#ifndef INCLUDED_away3d_core_traverse_ShadowCasterCollector
-#include <away3d/core/traverse/ShadowCasterCollector.h>
-#endif
-#ifndef INCLUDED_away3d_core_traverse_RaycastCollector
-#include <away3d/core/traverse/RaycastCollector.h>
-#endif
-#ifndef INCLUDED_away3d_core_traverse_EntityCollector
-#include <away3d/core/traverse/EntityCollector.h>
-#endif
-#ifndef INCLUDED_away3d_core_sort_RenderableMergeSort
-#include <away3d/core/sort/RenderableMergeSort.h>
-#endif
-#ifndef INCLUDED_away3d_core_sort_IEntitySorter
-#include <away3d/core/sort/IEntitySorter.h>
-#endif
-#ifndef INCLUDED_away3d_core_render_Filter3DRenderer
-#include <away3d/core/render/Filter3DRenderer.h>
-#endif
-#ifndef INCLUDED_away3d_core_render_DepthRenderer
-#include <away3d/core/render/DepthRenderer.h>
-#endif
-#ifndef INCLUDED_away3d_core_render_RendererBase
-#include <away3d/core/render/RendererBase.h>
-#endif
-#ifndef INCLUDED_away3d_core_render_BackgroundImageRenderer
-#include <away3d/core/render/BackgroundImageRenderer.h>
-#endif
-#ifndef INCLUDED_away3d_core_pick_PickingCollisionVO
-#include <away3d/core/pick/PickingCollisionVO.h>
-#endif
-#ifndef INCLUDED_away3d_core_pick_IPickingCollider
-#include <away3d/core/pick/IPickingCollider.h>
-#endif
-#ifndef INCLUDED_away3d_core_pick_IPicker
-#include <away3d/core/pick/IPicker.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_RenderableNode
-#include <away3d/core/partition/RenderableNode.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_PointLightNode
-#include <away3d/core/partition/PointLightNode.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_Partition3D
-#include <away3d/core/partition/Partition3D.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_NullNode
-#include <away3d/core/partition/NullNode.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_MeshNode
-#include <away3d/core/partition/MeshNode.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_LightProbeNode
-#include <away3d/core/partition/LightProbeNode.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_LightNode
-#include <away3d/core/partition/LightNode.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_DirectionalLightNode
-#include <away3d/core/partition/DirectionalLightNode.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_CameraNode
-#include <away3d/core/partition/CameraNode.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_EntityNode
-#include <away3d/core/partition/EntityNode.h>
-#endif
-#ifndef INCLUDED_away3d_core_partition_NodeBase
-#include <away3d/core/partition/NodeBase.h>
-#endif
-#ifndef INCLUDED_away3d_core_math_Quaternion
-#include <away3d/core/math/Quaternion.h>
-#endif
-#ifndef INCLUDED_openfl_geom_Vector3D
-#include <openfl/geom/Vector3D.h>
-#endif
-#ifndef INCLUDED_away3d_core_managers_TouchPoint
-#include <away3d/core/managers/TouchPoint.h>
-#endif
-#ifndef INCLUDED_openfl_display_Shape
-#include <openfl/display/Shape.h>
-#endif
-#ifndef INCLUDED_away3d_core_managers_RTTBufferManager
-#include <away3d/core/managers/RTTBufferManager.h>
-#endif
-#ifndef INCLUDED_away3d_core_data_RenderableListItemPool
-#include <away3d/core/data/RenderableListItemPool.h>
-#endif
-#ifndef INCLUDED_away3d_core_data_RenderableListItem
-#include <away3d/core/data/RenderableListItem.h>
-#endif
-#ifndef INCLUDED_away3d_core_data_EntityListItemPool
-#include <away3d/core/data/EntityListItemPool.h>
-#endif
-#ifndef INCLUDED_away3d_core_data_EntityListItem
-#include <away3d/core/data/EntityListItem.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_data_ParticleData
-#include <away3d/core/base/data/ParticleData.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_SubMesh
-#include <away3d/core/base/SubMesh.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_SubGeometry
-#include <away3d/core/base/SubGeometry.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_SkinnedSubGeometry
-#include <away3d/core/base/SkinnedSubGeometry.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_IRenderable
-#include <away3d/core/base/IRenderable.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_IMaterialOwner
-#include <away3d/core/base/IMaterialOwner.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_Geometry
-#include <away3d/core/base/Geometry.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_CompactSubGeometry
-#include <away3d/core/base/CompactSubGeometry.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_ISubGeometry
-#include <away3d/core/base/ISubGeometry.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_SubGeometryBase
-#include <away3d/core/base/SubGeometryBase.h>
-#endif
-#ifndef INCLUDED_away3d_controllers_ControllerBase
-#include <away3d/controllers/ControllerBase.h>
-#endif
-#ifndef INCLUDED_away3d_containers_View3D
-#include <away3d/containers/View3D.h>
-#endif
-#ifndef INCLUDED_away3d_containers_Scene3D
-#include <away3d/containers/Scene3D.h>
-#endif
-#ifndef INCLUDED_away3d_cameras_lenses_PerspectiveLens
-#include <away3d/cameras/lenses/PerspectiveLens.h>
-#endif
-#ifndef INCLUDED_away3d_cameras_lenses_FreeMatrixLens
-#include <away3d/cameras/lenses/FreeMatrixLens.h>
-#endif
-#ifndef INCLUDED_away3d_cameras_lenses_LensBase
-#include <away3d/cameras/lenses/LensBase.h>
-#endif
-#ifndef INCLUDED_away3d_cameras_Camera3D
-#include <away3d/cameras/Camera3D.h>
-#endif
-#ifndef INCLUDED_away3d_entities_Entity
-#include <away3d/entities/Entity.h>
-#endif
-#ifndef INCLUDED_away3d_containers_ObjectContainer3D
-#include <away3d/containers/ObjectContainer3D.h>
-#endif
-#ifndef INCLUDED_away3d_core_base_Object3D
-#include <away3d/core/base/Object3D.h>
-#endif
-#ifndef INCLUDED_away3d_bounds_NullBounds
-#include <away3d/bounds/NullBounds.h>
-#endif
-#ifndef INCLUDED_away3d_bounds_BoundingSphere
-#include <away3d/bounds/BoundingSphere.h>
-#endif
-#ifndef INCLUDED_away3d_bounds_AxisAlignedBoundingBox
-#include <away3d/bounds/AxisAlignedBoundingBox.h>
-#endif
-#ifndef INCLUDED_away3d_bounds_BoundingVolumeBase
-#include <away3d/bounds/BoundingVolumeBase.h>
-#endif
-#ifndef INCLUDED_away3d_animators_states_IAnimationState
-#include <away3d/animators/states/IAnimationState.h>
-#endif
-#ifndef INCLUDED_away3d_animators_nodes_AnimationNodeBase
-#include <away3d/animators/nodes/AnimationNodeBase.h>
-#endif
-#ifndef INCLUDED_away3d_animators_data_ParticleAnimationData
-#include <away3d/animators/data/ParticleAnimationData.h>
-#endif
-#ifndef INCLUDED_away3d_animators_data_AnimationSubGeometry
-#include <away3d/animators/data/AnimationSubGeometry.h>
-#endif
-#ifndef INCLUDED_away3d_animators_data_AnimationRegisterCache
-#include <away3d/animators/data/AnimationRegisterCache.h>
-#endif
-#ifndef INCLUDED_away3d_materials_compilation_ShaderRegisterCache
-#include <away3d/materials/compilation/ShaderRegisterCache.h>
-#endif
-#ifndef INCLUDED_away3d_animators_IAnimator
-#include <away3d/animators/IAnimator.h>
-#endif
-#ifndef INCLUDED_away3d_animators_IAnimationSet
-#include <away3d/animators/IAnimationSet.h>
-#endif
-#ifndef INCLUDED_away3d_animators_AnimatorBase
-#include <away3d/animators/AnimatorBase.h>
-#endif
-#ifndef INCLUDED_away3d_library_assets_IAsset
-#include <away3d/library/assets/IAsset.h>
-#endif
 #ifndef INCLUDED__Xml_XmlType_Impl_
 #include <_Xml/XmlType_Impl_.h>
 #endif
@@ -3588,6 +3114,7 @@ __files__boot();
 ::openfl::media::SoundMixer_obj::__register();
 ::openfl::media::SoundTransform_obj::__register();
 ::openfl::geom::_Orientation3D::Orientation3D_Impl__obj::__register();
+::openfl::geom::Matrix3D_obj::__register();
 ::openfl::events::UncaughtErrorEvent_obj::__register();
 ::openfl::events::TouchEvent_obj::__register();
 ::openfl::events::SecurityErrorEvent_obj::__register();
@@ -3606,6 +3133,8 @@ __files__boot();
 ::openfl::events::ErrorEvent_obj::__register();
 ::openfl::events::TextEvent_obj::__register();
 ::openfl::events::ActivityEvent_obj::__register();
+::openfl::events::Event_obj::__register();
+::openfl::errors::Error_obj::__register();
 ::openfl::display3D::textures::Texture_obj::__register();
 ::openfl::display3D::textures::TextureBase_obj::__register();
 ::openfl::display3D::_internal::Context3DState_obj::__register();
@@ -3768,6 +3297,7 @@ __files__boot();
 ::flixel::util::FlxCollision_obj::__register();
 ::flixel::util::FlxBitmapDataUtil_obj::__register();
 ::flixel::util::FlxBitmapDataPool_obj::__register();
+::openfl::geom::Rectangle_obj::__register();
 ::flixel::tweens::FlxTween_obj::__register();
 ::flixel::tweens::FlxEase_obj::__register();
 ::flixel::tile::FlxBaseTilemap_obj::__register();
@@ -3845,59 +3375,11 @@ __files__boot();
 ::haxe::Log_obj::__register();
 ::flixel::_hx_system::FlxVersion_obj::__register();
 ::flixel::FlxCamera_obj::__register();
-::flixel::math::FlxRect_obj::__register();
-::flixel::math::FlxPoint_obj::__register();
-::away3d::tools::utils::TextureUtils_obj::__register();
-::away3d::tools::utils::GeomUtil_obj::__register();
-::away3d::textures::BitmapTexture_obj::__register();
-::away3d::textures::_Anisotropy::Anisotropy_Impl__obj::__register();
-::away3d::primitives::LineSegment_obj::__register();
-::away3d::materials::utils::MipmapGenerator_obj::__register();
-::away3d::materials::passes::SegmentPass_obj::__register();
-::away3d::materials::passes::MaterialPassBase_obj::__register();
-::away3d::materials::compilation::ShaderRegisterElement_obj::__register();
-::away3d::materials::compilation::RegisterPool_obj::__register();
-::away3d::materials::MaterialBase_obj::__register();
-::away3d::materials::LightSources_obj::__register();
-::away3d::library::assets::Asset3DType_obj::__register();
-::away3d::events::TouchEvent3D_obj::__register();
-::away3d::events::Stage3DEvent_obj::__register();
-::away3d::events::ShadingMethodEvent_obj::__register();
-::away3d::events::Scene3DEvent_obj::__register();
-::away3d::events::Object3DEvent_obj::__register();
-::away3d::events::LightEvent_obj::__register();
-::away3d::events::LensEvent_obj::__register();
-::away3d::events::GeometryEvent_obj::__register();
-::away3d::events::CameraEvent_obj::__register();
-::away3d::events::Asset3DEvent_obj::__register();
-::away3d::events::AnimatorEvent_obj::__register();
-::openfl::errors::Error_obj::__register();
-::away3d::entities::SegmentSet_obj::__register();
-::away3d::debug::Debug_obj::__register();
-::away3d::core::traverse::PartitionTraverser_obj::__register();
-::away3d::core::render::DefaultRenderer_obj::__register();
-::away3d::core::pick::PickingType_obj::__register();
-::away3d::core::pick::ShaderPicker_obj::__register();
-::openfl::geom::Rectangle_obj::__register();
-::away3d::core::pick::RaycastPicker_obj::__register();
-::away3d::core::math::PlaneClassification_obj::__register();
-::away3d::core::math::Plane3D_obj::__register();
-::away3d::core::math::Matrix3DUtils_obj::__register();
-::openfl::geom::Matrix3D_obj::__register();
-::away3d::core::math::MathConsts_obj::__register();
-::away3d::core::managers::Touch3DManager_obj::__register();
-::away3d::core::managers::Stage3DProxy_obj::__register();
 ::openfl::geom::ColorTransform_obj::__register();
 ::openfl::geom::Matrix_obj::__register();
 ::lime::math::Matrix3_obj::__register();
-::away3d::core::managers::Stage3DManager_obj::__register();
-::away3d::core::managers::Mouse3DManager_obj::__register();
-::away3d::events::MouseEvent3D_obj::__register();
-::openfl::events::Event_obj::__register();
-::away3d::core::managers::AGALProgram3DCache_obj::__register();
-::away3d::cameras::lenses::CoordinateSystem_obj::__register();
-::away3d::library::assets::NamedAssetBase_obj::__register();
-::away3d::Away3D_obj::__register();
+::flixel::math::FlxRect_obj::__register();
+::flixel::math::FlxPoint_obj::__register();
 ::Xml_obj::__register();
 ::haxe::SysTools_obj::__register();
 ::Paths_obj::__register();
@@ -3973,6 +3455,7 @@ __files__boot();
 ::openfl::media::SoundChannel_obj::__register();
 ::openfl::media::Sound_obj::__register();
 ::openfl::media::ID3Info_obj::__register();
+::openfl::geom::Vector3D_obj::__register();
 ::openfl::geom::Transform_obj::__register();
 ::openfl::filters::BitmapFilter_obj::__register();
 ::openfl::events::UncaughtErrorEvents_obj::__register();
@@ -4030,6 +3513,7 @@ __files__boot();
 ::openfl::display::TileContainer_obj::__register();
 ::openfl::display::Stage3D_obj::__register();
 ::openfl::display::SimpleButton_obj::__register();
+::openfl::display::Shape_obj::__register();
 ::openfl::display::_ShaderData::ShaderData_Impl__obj::__register();
 ::openfl::display::Scene_obj::__register();
 ::openfl::display::PNGEncoderOptions_obj::__register();
@@ -4498,122 +3982,6 @@ __files__boot();
 ::flixel::util::IFlxPooled_obj::__register();
 ::flixel::IFlxBasic_obj::__register();
 ::cpp::Lib_obj::__register();
-::away3d::textures::RenderTexture_obj::__register();
-::away3d::textures::RenderCubeTexture_obj::__register();
-::away3d::textures::CubeTextureBase_obj::__register();
-::away3d::textures::Texture2DBase_obj::__register();
-::away3d::textures::TextureProxyBase_obj::__register();
-::away3d::primitives::WireframeSphere_obj::__register();
-::away3d::primitives::WireframeCube_obj::__register();
-::away3d::primitives::WireframePrimitiveBase_obj::__register();
-::away3d::primitives::data::Segment_obj::__register();
-::away3d::materials::utils::DefaultMaterialManager_obj::__register();
-::away3d::materials::passes::SuperShaderPass_obj::__register();
-::away3d::materials::passes::SingleObjectDepthPass_obj::__register();
-::away3d::materials::passes::DistanceMapPass_obj::__register();
-::away3d::materials::passes::DepthMapPass_obj::__register();
-::away3d::materials::passes::CompiledPass_obj::__register();
-::away3d::materials::methods::SubsurfaceScatteringDiffuseMethod_obj::__register();
-::away3d::materials::methods::ShadowMapMethodBase_obj::__register();
-::away3d::materials::methods::ShaderMethodSetup_obj::__register();
-::away3d::materials::methods::MethodVOSet_obj::__register();
-::away3d::materials::methods::MethodVO_obj::__register();
-::away3d::materials::methods::CompositeDiffuseMethod_obj::__register();
-::away3d::materials::methods::ColorTransformMethod_obj::__register();
-::away3d::materials::methods::EffectMethodBase_obj::__register();
-::away3d::materials::methods::BasicSpecularMethod_obj::__register();
-::away3d::materials::methods::BasicNormalMethod_obj::__register();
-::away3d::materials::methods::BasicDiffuseMethod_obj::__register();
-::away3d::materials::methods::LightingMethodBase_obj::__register();
-::away3d::materials::methods::BasicAmbientMethod_obj::__register();
-::away3d::materials::methods::ShadingMethodBase_obj::__register();
-::away3d::materials::lightpickers::LightPickerBase_obj::__register();
-::away3d::materials::compilation::SuperShaderCompiler_obj::__register();
-::away3d::materials::compilation::ShaderRegisterData_obj::__register();
-::away3d::materials::compilation::ShaderCompiler_obj::__register();
-::away3d::materials::compilation::MethodDependencyCounter_obj::__register();
-::away3d::materials::TextureMaterial_obj::__register();
-::away3d::materials::SinglePassMaterialBase_obj::__register();
-::away3d::materials::SegmentMaterial_obj::__register();
-::away3d::lights::shadowmaps::DirectionalShadowMapper_obj::__register();
-::away3d::lights::shadowmaps::CubeMapShadowMapper_obj::__register();
-::away3d::lights::shadowmaps::ShadowMapperBase_obj::__register();
-::away3d::lights::PointLight_obj::__register();
-::away3d::lights::LightProbe_obj::__register();
-::away3d::lights::DirectionalLight_obj::__register();
-::away3d::lights::LightBase_obj::__register();
-::away3d::filters::tasks::Filter3DTaskBase_obj::__register();
-::away3d::filters::Filter3DBase_obj::__register();
-::away3d::errors::AbstractMethodError_obj::__register();
-::away3d::entities::SubSet_obj::__register();
-::away3d::entities::SegRef_obj::__register();
-::away3d::entities::Mesh_obj::__register();
-::away3d::core::traverse::ShadowCasterCollector_obj::__register();
-::away3d::core::traverse::RaycastCollector_obj::__register();
-::away3d::core::traverse::EntityCollector_obj::__register();
-::away3d::core::sort::RenderableMergeSort_obj::__register();
-::away3d::core::sort::IEntitySorter_obj::__register();
-::away3d::core::render::Filter3DRenderer_obj::__register();
-::away3d::core::render::DepthRenderer_obj::__register();
-::away3d::core::render::RendererBase_obj::__register();
-::away3d::core::render::BackgroundImageRenderer_obj::__register();
-::away3d::core::pick::PickingCollisionVO_obj::__register();
-::away3d::core::pick::IPickingCollider_obj::__register();
-::away3d::core::pick::IPicker_obj::__register();
-::away3d::core::partition::RenderableNode_obj::__register();
-::away3d::core::partition::PointLightNode_obj::__register();
-::away3d::core::partition::Partition3D_obj::__register();
-::away3d::core::partition::NullNode_obj::__register();
-::away3d::core::partition::MeshNode_obj::__register();
-::away3d::core::partition::LightProbeNode_obj::__register();
-::away3d::core::partition::LightNode_obj::__register();
-::away3d::core::partition::DirectionalLightNode_obj::__register();
-::away3d::core::partition::CameraNode_obj::__register();
-::away3d::core::partition::EntityNode_obj::__register();
-::away3d::core::partition::NodeBase_obj::__register();
-::away3d::core::math::Quaternion_obj::__register();
-::openfl::geom::Vector3D_obj::__register();
-::away3d::core::managers::TouchPoint_obj::__register();
-::openfl::display::Shape_obj::__register();
-::away3d::core::managers::RTTBufferManager_obj::__register();
-::away3d::core::data::RenderableListItemPool_obj::__register();
-::away3d::core::data::RenderableListItem_obj::__register();
-::away3d::core::data::EntityListItemPool_obj::__register();
-::away3d::core::data::EntityListItem_obj::__register();
-::away3d::core::base::data::ParticleData_obj::__register();
-::away3d::core::base::SubMesh_obj::__register();
-::away3d::core::base::SubGeometry_obj::__register();
-::away3d::core::base::SkinnedSubGeometry_obj::__register();
-::away3d::core::base::IRenderable_obj::__register();
-::away3d::core::base::IMaterialOwner_obj::__register();
-::away3d::core::base::Geometry_obj::__register();
-::away3d::core::base::CompactSubGeometry_obj::__register();
-::away3d::core::base::ISubGeometry_obj::__register();
-::away3d::core::base::SubGeometryBase_obj::__register();
-::away3d::controllers::ControllerBase_obj::__register();
-::away3d::containers::View3D_obj::__register();
-::away3d::containers::Scene3D_obj::__register();
-::away3d::cameras::lenses::PerspectiveLens_obj::__register();
-::away3d::cameras::lenses::FreeMatrixLens_obj::__register();
-::away3d::cameras::lenses::LensBase_obj::__register();
-::away3d::cameras::Camera3D_obj::__register();
-::away3d::entities::Entity_obj::__register();
-::away3d::containers::ObjectContainer3D_obj::__register();
-::away3d::core::base::Object3D_obj::__register();
-::away3d::bounds::NullBounds_obj::__register();
-::away3d::bounds::BoundingSphere_obj::__register();
-::away3d::bounds::AxisAlignedBoundingBox_obj::__register();
-::away3d::bounds::BoundingVolumeBase_obj::__register();
-::away3d::animators::states::IAnimationState_obj::__register();
-::away3d::animators::nodes::AnimationNodeBase_obj::__register();
-::away3d::animators::data::ParticleAnimationData_obj::__register();
-::away3d::animators::data::AnimationSubGeometry_obj::__register();
-::away3d::animators::data::AnimationRegisterCache_obj::__register();
-::away3d::materials::compilation::ShaderRegisterCache_obj::__register();
-::away3d::animators::IAnimator_obj::__register();
-::away3d::animators::IAnimationSet_obj::__register();
-::away3d::animators::AnimatorBase_obj::__register();
-::away3d::library::assets::IAsset_obj::__register();
 ::_Xml::XmlType_Impl__obj::__register();
 ::Type_obj::__register();
 ::Sys_obj::__register();
@@ -4752,59 +4120,11 @@ __files__boot();
 ::Paths_obj::__boot();
 ::haxe::SysTools_obj::__boot();
 ::Xml_obj::__boot();
-::away3d::Away3D_obj::__boot();
-::away3d::library::assets::NamedAssetBase_obj::__boot();
-::away3d::cameras::lenses::CoordinateSystem_obj::__boot();
-::away3d::core::managers::AGALProgram3DCache_obj::__boot();
-::openfl::events::Event_obj::__boot();
-::away3d::events::MouseEvent3D_obj::__boot();
-::away3d::core::managers::Mouse3DManager_obj::__boot();
-::away3d::core::managers::Stage3DManager_obj::__boot();
+::flixel::math::FlxPoint_obj::__boot();
+::flixel::math::FlxRect_obj::__boot();
 ::lime::math::Matrix3_obj::__boot();
 ::openfl::geom::Matrix_obj::__boot();
 ::openfl::geom::ColorTransform_obj::__boot();
-::away3d::core::managers::Stage3DProxy_obj::__boot();
-::away3d::core::managers::Touch3DManager_obj::__boot();
-::away3d::core::math::MathConsts_obj::__boot();
-::openfl::geom::Matrix3D_obj::__boot();
-::away3d::core::math::Matrix3DUtils_obj::__boot();
-::away3d::core::math::Plane3D_obj::__boot();
-::away3d::core::math::PlaneClassification_obj::__boot();
-::away3d::core::pick::RaycastPicker_obj::__boot();
-::openfl::geom::Rectangle_obj::__boot();
-::away3d::core::pick::ShaderPicker_obj::__boot();
-::away3d::core::pick::PickingType_obj::__boot();
-::away3d::core::render::DefaultRenderer_obj::__boot();
-::away3d::core::traverse::PartitionTraverser_obj::__boot();
-::away3d::debug::Debug_obj::__boot();
-::away3d::entities::SegmentSet_obj::__boot();
-::openfl::errors::Error_obj::__boot();
-::away3d::events::AnimatorEvent_obj::__boot();
-::away3d::events::Asset3DEvent_obj::__boot();
-::away3d::events::CameraEvent_obj::__boot();
-::away3d::events::GeometryEvent_obj::__boot();
-::away3d::events::LensEvent_obj::__boot();
-::away3d::events::LightEvent_obj::__boot();
-::away3d::events::Object3DEvent_obj::__boot();
-::away3d::events::Scene3DEvent_obj::__boot();
-::away3d::events::ShadingMethodEvent_obj::__boot();
-::away3d::events::Stage3DEvent_obj::__boot();
-::away3d::events::TouchEvent3D_obj::__boot();
-::away3d::library::assets::Asset3DType_obj::__boot();
-::away3d::materials::LightSources_obj::__boot();
-::away3d::materials::MaterialBase_obj::__boot();
-::away3d::materials::compilation::RegisterPool_obj::__boot();
-::away3d::materials::compilation::ShaderRegisterElement_obj::__boot();
-::away3d::materials::passes::MaterialPassBase_obj::__boot();
-::away3d::materials::passes::SegmentPass_obj::__boot();
-::away3d::materials::utils::MipmapGenerator_obj::__boot();
-::away3d::primitives::LineSegment_obj::__boot();
-::away3d::textures::_Anisotropy::Anisotropy_Impl__obj::__boot();
-::away3d::textures::BitmapTexture_obj::__boot();
-::away3d::tools::utils::GeomUtil_obj::__boot();
-::away3d::tools::utils::TextureUtils_obj::__boot();
-::flixel::math::FlxPoint_obj::__boot();
-::flixel::math::FlxRect_obj::__boot();
 ::flixel::FlxCamera_obj::__boot();
 ::flixel::_hx_system::FlxVersion_obj::__boot();
 ::flixel::math::FlxRandom_obj::__boot();
@@ -4881,6 +4201,7 @@ __files__boot();
 ::flixel::tile::FlxBaseTilemap_obj::__boot();
 ::flixel::tweens::FlxEase_obj::__boot();
 ::flixel::tweens::FlxTween_obj::__boot();
+::openfl::geom::Rectangle_obj::__boot();
 ::flixel::util::FlxBitmapDataPool_obj::__boot();
 ::flixel::util::FlxBitmapDataUtil_obj::__boot();
 ::flixel::util::FlxCollision_obj::__boot();
@@ -5043,6 +4364,8 @@ __files__boot();
 ::openfl::display3D::_internal::Context3DState_obj::__boot();
 ::openfl::display3D::textures::TextureBase_obj::__boot();
 ::openfl::display3D::textures::Texture_obj::__boot();
+::openfl::errors::Error_obj::__boot();
+::openfl::events::Event_obj::__boot();
 ::openfl::events::ActivityEvent_obj::__boot();
 ::openfl::events::TextEvent_obj::__boot();
 ::openfl::events::ErrorEvent_obj::__boot();
@@ -5061,6 +4384,7 @@ __files__boot();
 ::openfl::events::SecurityErrorEvent_obj::__boot();
 ::openfl::events::TouchEvent_obj::__boot();
 ::openfl::events::UncaughtErrorEvent_obj::__boot();
+::openfl::geom::Matrix3D_obj::__boot();
 ::openfl::geom::_Orientation3D::Orientation3D_Impl__obj::__boot();
 ::openfl::media::SoundTransform_obj::__boot();
 ::openfl::media::SoundMixer_obj::__boot();
