@@ -16,10 +16,3 @@ Credits
 Build Instructions
 ---
 none
-
-**Pain and Suffering**
----
-
-![image](https://user-images.githubusercontent.com/57333642/139299889-c729bc14-2d40-45f5-acfd-2488d89b9953.png)
-
-yes
