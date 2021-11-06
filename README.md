@@ -6,7 +6,7 @@ A engine that a couple of people tried to make
 
 Credits
 ---
-* [AxyAS](https://twitter.com/Defiance1223) - Leader and main coder
+* [AxyAni8](https://twitter.com/Defiance1223) - Leader and main coder
 * [Raf](https://www.youtube.com/watch?v=dQw4w9WgXcQ) - Coder and kinda artist
 * [VoidlessArzon](https://twitter.com/sleathybakedsw1) - she artist
 * [BadTie](https://twitter.com/BadTie2) - cant code but is a very good bf <3 -- AxyAnim8
